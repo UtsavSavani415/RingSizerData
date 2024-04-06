@@ -9,15 +9,9 @@ app.get("/", (req, res) => {
   res.send("GET request to homepage");
 });
 app.get("/sizes", (req, res) => {
-  console.log("====================================");
-  console.log("sizes", sizes);
-  console.log("====================================");
-
   res.send({ res: sizes });
 });
 app.get("/tablesizes", (req, res) => {
-  console.log("====================================");
-  console.log("sizes", tableSizes);
   res.send({ res: tableSizes });
 });
 
